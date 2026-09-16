@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Siento</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+
+    <header class="header">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="#home"
+            class="logo-link"
+            data-page="home"
+        >
+
+            <img
+                src="logo.png"
+                class="logo"
+                alt="Siento"
+            >
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a
+                href="#home"
+                data-page="home"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="#men"
+                data-page="men"
+                class="nav-link"
+            >
+                Men
+            </a>
+
+            <a
+                href="#women"
+                data-page="women"
+                class="nav-link"
+            >
+                Women
+            </a>
+
+            <a
+                href="#about"
+                data-page="about"
+                class="nav-link"
+            >
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER RIGHT -->
+
+        <div class="header-right">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search.."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- BAG -->
+
+            <button
+                class="header-button"
+                id="cartButton"
+                aria-label="Shopping bag"
+            >
+
+                <span class="bag-icon"></span>
+
+                <span
+                    class="counter"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- WISHLIST -->
+
+            <button
+                class="header-button heart-button"
+                id="wishlistButton"
+                aria-label="Wishlist"
+            >
+
+                <span>
+                    ♡
+                </span>
+
+                <span
+                    class="counter"
+                    id="wishlistCount"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main>
+
+
+        <!-- ==================================================
+             HOME PAGE
+        =================================================== -->
+
+        <section
+            id="home"
+            class="page active"
+        >
+
+<!-- HOME HERO -->
+
+<section class="hero home-hero">
+
+    <div class="hero-slides">
+
+        <!-- SLIDE 1 -->
+        <div class="hero-slide active">
+
+            <img src="Mtrending3.webp" alt="Siento footwear">
+
+            <div class="hero-content">
+                <p class="discount">- New Arrival -</p>
+                <h1>Move Different</h1>
+                <p>Own Every Step.</p>
+                <button class="hero-buy" type="button" data-page="men">Explore</button>
+
+                
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 2 -->
+        <div class="hero-slide">
+
+            <img src="Trending2.webp" alt="Siento collection">
+
+            <div class="hero-content">
+                <p class="discount">- New Arrival -</p>
+                <h1>Timeless Style.</h1>
+                <p>Comfort Made For Every Step.</p>
+                  <button class="hero-buy" type="button" data-page="men">Explore</button>
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 3 -->
+        <div class="hero-slide">
+
+            <img src="Trending3.webp" alt="Siento shoes">
+
+            <div class="hero-content">
+                <p class="discount">- Up to 25% Off -</p>
+                <h1>Walk Your Way</h1>
+                <p>Comfort meets modern design.</p>
+                 <button class="hero-buy" type="button" data-page="women">Explore</button>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- HERO ARROWS -->
+
+    <button
+        class="hero-arrow hero-prev"
+        type="button"
+        aria-label="Previous slide"
+    >
+        ‹
+    </button>
+
+
+    <button
+        class="hero-arrow hero-next"
+        type="button"
+        aria-label="Next slide"
+    >
+        ›
+    </button>
+
+</section>
+            <!-- ==================================================
+                 TRENDING
+            =================================================== -->
+
+            <section class="trending-section">
+
+                <div class="section-heading">
+
+                    <p>
+                        TRENDING
+                    </p>
+
+                    <h2>
+                        Step Into What's New
+                    </h2>
+
+                </div>
+
+
+                <!-- THREE TRENDING CARDS -->
+
+                <div
+                    class="trending-container"
+                    id="trendingContainer"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 HOME SLOGAN
+            =================================================== -->
+
+            <section class="slogan-section">
+
+                <h2>
+                 Every Step . Feel The Difference.
+                </h2>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 HOME ABOUT
+            =================================================== -->
+
+            <section class="home-about">
+
+                <div class="home-about-image">
+
+                    <img
+                        src="photo_2026-09-16_00-01-14.jpg"
+                        alt="About Siento"
+                    >
+
+                </div>
+
+
+                <div class="home-about-content">
+
+                    <p class="small-title">
+                        ABOUT SIENTO
+                    </p>
+
+                    <h2>
+                 Walk Bold.Feel Siento.
+                    </h2>
+
+                    <p>From Everyday Sneakers To Elegant Heels And Effortless Sandals,
+                        Every Pair Is Chosen To Bring Together Comfort,Confidence,and Style.
+                    </p>
+
+                    <a
+                        href="#about"
+                        class="about-button"
+                        data-page="about"
+                    >
+                        Discover More
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             MEN PAGE
+        =================================================== -->
+
+        <section
+            id="men"
+            class="page"
+        >
+
+
+            <!-- MEN HERO -->
+
+          <section class="hero category-hero men-hero">
+
+    <div class="hero-slides">
+
+        <!-- MEN SLIDE 1 -->
+        <div class="hero-slide active">
+            <img src="Mtrending1.webp" alt="Men's footwear">
+
+            <div class="hero-content">
+                <p class="discount">- Up to 20% Off -</p>
+                <h1>Made For Motion.</h1>
+                <p>Built for every step.</p>
+                <button class="hero-buy" type="button">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- MEN SLIDE 2 -->
+        <div class="hero-slide">
+            <img src="Mtrending2.webp" alt="Men's footwear">
+
+            <div class="hero-content">
+                <p class="discount">- Up to 15% Off -</p>
+                <h1>Lace Up.Stand Out.</h1>
+                <p>Everyday shoes for every journey.</p>
+                <button class="hero-buy" type="button">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- MEN SLIDE 3 -->
+        <div class="hero-slide">
+            <img src="Mtrending4.webp" alt="Men's footwear">
+
+            <div class="hero-content">
+                <p class="discount">- Up to 40% Off -</p>
+                <h1>Own Your Look.</h1>
+                <p>Move Fast.Look Fresh.</p>
+                <button class="hero-buy" type="button">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <button
+        class="hero-arrow hero-prev"
+        type="button"
+        aria-label="Previous slide">
+        ‹
+    </button>
+
+    <button
+        class="hero-arrow hero-next"
+        type="button"
+        aria-label="Next slide">
+        ›
+    </button>
+
+</section>
+
+
+
+            <!-- MEN PRODUCTS -->
+
+            <section class="category-section">
+
+
+                <!-- CASUAL -->
+
+                <div class="category-header">
+
+                    <p>
+                        MEN
+                    </p>
+
+                    <h2>
+                        Casual
+                    </h2>
+
+                </div>
+
+
+                <div class="product-slider">
+
+                    <button
+                        class="slider-arrow slider-prev"
+                        aria-label="Previous products"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div
+                        class="product-scroll"
+                        id="menCasual"
+                    ></div>
+
+
+                    <button
+                        class="slider-arrow slider-next"
+                        aria-label="Next products"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+
+                <!-- FORMAL -->
+
+                <div class="category-header">
+
+                    <p>
+                        MEN
+                    </p>
+
+                    <h2>
+                        Formal
+                    </h2>
+
+                </div>
+
+
+                <div class="product-slider">
+
+                    <button
+                        class="slider-arrow slider-prev"
+                        aria-label="Previous products"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div
+                        class="product-scroll"
+                        id="menFormal"
+                    ></div>
+
+
+                    <button
+                        class="slider-arrow slider-next"
+                        aria-label="Next products"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+
+                <!-- SPORTS -->
+
+                <div class="category-header">
+
+                    <p>
+                        MEN
+                    </p>
+
+                    <h2>
+                        Sports
+                    </h2>
+
+                </div>
+
+
+                <div class="product-slider">
+
+                    <button
+                        class="slider-arrow slider-prev"
+                        aria-label="Previous products"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div
+                        class="product-scroll"
+                        id="menSports"
+                    ></div>
+
+
+                    <button
+                        class="slider-arrow slider-next"
+                        aria-label="Next products"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+            </section>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             WOMEN PAGE
+        =================================================== -->
+
+        <section
+            id="women"
+            class="page"
+        >
+
+
+            <!-- WOMEN HERO -->
+<section class="hero category-hero women-hero">
+
+    <div class="hero-slides">
+
+        <!-- WOMEN SLIDE 1 -->
+        <div class="hero-slide active">
+            <img src="Wtrending1.webp" alt="Women's footwear">
+
+            <div class="hero-content">
+                <p class="discount">-- Up to 20% Off - -</p>
+                <h1>Step Up Your Style.</h1>
+                <p>Made for Every Moment & Every move.</p>
+                <button class="hero-buy" type="button">Shop Now</button>
+            </div>
+        </div>
+
+
+        <!-- WOMEN SLIDE 2 -->
+        <div class="hero-slide">
+            <img src="Wtrending2.jpg" alt="Women's footwear">
+
+            <div class="hero-content">
+                <p class="discount">- Up to 30% Off -</p>
+                <h1>Walk Bold.Wear Better.</h1>
+                <p>Style that moves with you.</p>
+                <button class="hero-buy" type="button">Shop Now</button>
+            </div>
+        </div>
+
+
+        <!-- WOMEN SLIDE 3 -->
+        <div class="hero-slide">
+            <img src="Wtrending3.jpg" alt="Women's footwear">
+
+            <div class="hero-content">
+                <p class="discount">- Up to 50% Off -</p>
+                <h1>Raise Your Style.</h1>
+                <p>Designed to Make Every Step Count.</p>
+                <button class="hero-buy" type="button">Shop Now</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <button
+        class="hero-arrow hero-prev"
+        type="button"
+        aria-label="Previous slide">
+        ‹
+    </button>
+
+    <button
+        class="hero-arrow hero-next"
+        type="button"
+        aria-label="Next slide">
+        ›
+    </button>
+
+</section>
+
+
+
+            <!-- WOMEN PRODUCTS -->
+
+            <section class="category-section">
+
+
+                <!-- CASUAL -->
+
+                <div class="category-header">
+
+                    <p>
+                        WOMEN
+                    </p>
+
+                    <h2>
+                        Casual
+                    </h2>
+
+                </div>
+
+
+                <div class="product-slider">
+
+                    <button
+                        class="slider-arrow slider-prev"
+                        aria-label="Previous products"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div
+                        class="product-scroll"
+                        id="womenCasual"
+                    ></div>
+
+
+                    <button
+                        class="slider-arrow slider-next"
+                        aria-label="Next products"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+
+                <!-- HEELS -->
+
+                <div class="category-header">
+
+                    <p>
+                        WOMEN
+                    </p>
+
+                    <h2>
+                        Heels
+                    </h2>
+
+                </div>
+
+
+                <div class="product-slider">
+
+                    <button
+                        class="slider-arrow slider-prev"
+                        aria-label="Previous products"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div
+                        class="product-scroll"
+                        id="womenHeels"
+                    ></div>
+
+
+                    <button
+                        class="slider-arrow slider-next"
+                        aria-label="Next products"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+
+                <!-- SANDALS -->
+
+                <div class="category-header">
+
+                    <p>
+                        WOMEN
+                    </p>
+
+                    <h2>
+                        Sandals
+                    </h2>
+
+                </div>
+
+
+                <div class="product-slider">
+
+                    <button
+                        class="slider-arrow slider-prev"
+                        aria-label="Previous products"
+                    >
+                        ‹
+                    </button>
+
+
+                    <div
+                        class="product-scroll"
+                        id="womenSandals"
+                    ></div>
+
+
+                    <button
+                        class="slider-arrow slider-next"
+                        aria-label="Next products"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+            </section>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ABOUT PAGE
+        =================================================== -->
+
+        <section
+            id="about"
+            class="page"
+        >
+
+
+            <!-- ABOUT HERO --><section class="about-hero">
+
+    <img
+        src="photo_2026-09-16_04-12-59.jpg"
+        alt="About Siento"
+    >
+
+    <div class="about-hero-content">
+
+        <p>
+            OUR STORY
+        </p>
+
+        <h1>
+           " Crafted For Those Who Walk   <br>Their Own Way."
+        </h1>
+
+    </div>
+
+</section>
+
+
+
+            <!-- ABOUT CONTENT -->
+
+            <section class="about-content">
+
+
+                <div class="about-text">
+
+                    <p class="small-title">
+                        WHO WE ARE
+                    </p>
+
+                    <h2>
+                        Footwear With
+                        A Different Feeling.
+                    </h2>
+
+                    <p>Our Story
+
+Crafted for those who walk their own way.
+
+Siento was born from a passion for refined design and effortless confidence. 
+We believe true luxury lives in the detail the silhouette, the feel,
+ and the way a perfect pair moves with you.
+  Every Siento piece is designed to turn everyday steps into moments worth remembering.
+
+                    <p>
+                        From everyday essentials
+                        to statement styles,
+                        Siento helps you move
+                        through every moment
+                        your way.
+                    </p>
+
+                </div>
+
+
+                <div class="about-image">
+
+                    <img
+                        src="photo_2026-09-16_00-01-14.jpg"
+                        alt="Siento footwear"
+                    >
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+
+
+            <div class="footer-links">
+
+                <a
+                    href="#home"
+                    data-page="home"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#men"
+                    data-page="men"
+                >
+                    Men
+                </a>
+
+                <a
+                    href="#women"
+                    data-page="women"
+                >
+                    Women
+                </a>
+
+                <a
+                    href="#about"
+                    data-page="about"
+                >
+                    About
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 . All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         TOAST
+    =================================================== -->
+
+    <div
+        id="toast"
+        class="toast"
+    ></div>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
