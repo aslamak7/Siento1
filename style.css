@@ -414,7 +414,7 @@ img {
 .hero-arrow {
     position: absolute;
 
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
 
     width: 44px;
@@ -423,7 +423,7 @@ img {
     border: none;
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.199);
 
     color: #111;
 
@@ -901,7 +901,8 @@ img {
     border: none;
     border-radius: 50%;
 
-    background: #fff;
+    background: rgba(255, 255, 255, 0.199);
+    
     color: #111;
 
     font-size: 30px;
@@ -2303,7 +2304,7 @@ img {
     }
 
     .about-hero-content h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .about-text {
@@ -2311,7 +2312,7 @@ img {
     }
 
     .about-text h2 {
-        font-size: 33px;
+        font-size: 20px;
     }
 
     .about-text > p:not(.small-title) {
