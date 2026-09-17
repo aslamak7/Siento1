@@ -590,7 +590,10 @@ img {
 }
 
 .wish-card {
-    font-size: 22px;
+    font-size: 26px;
+}
+.bag-card{
+    font-size: 26px;
 }
 
 
@@ -621,7 +624,7 @@ img {
 }
 
 .card-name {
-    font-size: 14px;
+    font-size: 20px;
 
     font-weight: 500;
 
@@ -632,6 +635,8 @@ img {
 /* BUY BUTTON */
 
 .buy-btn {
+
+    
     flex-shrink: 0;
 
     padding: 8px 13px;
@@ -1339,6 +1344,8 @@ img {
         right: 15px;
     }
 
+    
+
 /* =========================================================
    MOBILE - TRENDING
    ========================================================= */
@@ -1364,6 +1371,7 @@ img {
 
  .card-name {
         font-size: 8px !important;
+        font-weight: 500;
     }
 
 
@@ -1468,17 +1476,7 @@ img {
     }
 
 
-    /* HEART */
-    #trendingContainer .wish-card {
-        font-size: 17px !important;
-    }
-
-
-    /* BAG */
-    #trendingContainer .bag-card .bag-icon {
-        transform: scale(0.65);
-    }
-
+  
 
     /* =====================================================
        BUY NOW BUTTON - SMALL
@@ -2507,13 +2505,55 @@ img {
         bottom: auto !important;
         transform: translateY(-50%) !important;
     }
+
+
+    .hero-buy {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #fff;
+    color: #111;
+    font-size: 10px;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.hero-buy:hover {
+    background: #111;
+    color: #fff;
+}
 }
 
 @media (max-width: 650px) {
     .product-scroll {
         touch-action: pan-y;
     }
+
+    
+.wish-card.selected::after {
+    content: "❤️";
+    font-size: 15px;
 }
+
+.wish-card.selected {
+    font-size: 0;
+}
+
+.bag-card.selected {
+    background: #ffffff;
+}
+
+.bag-card.selected .bag-icon {
+    background: #000000;
+}
+}
+
+
+
+
+
 
 /* CLICKED HEART */
 .wish-card.selected {
@@ -2542,7 +2582,36 @@ img {
 }
 
 
+@media (max-width: 650px) {
 
+    #trendingContainer .wish-card {
+        font-size: 14px !important;
+        color: #000;
+    }
+
+    #trendingContainer .wish-card.selected {
+        font-size: 0 !important;
+        color: #ff2d55;
+    }
+
+    #trendingContainer .wish-card.selected::after {
+        content: "❤️";
+        font-size: 10px !important;
+        color: #ff2d55;
+        line-height: 1;
+    }
+      /* HEART */
+    #trendingContainer .wish-card {
+        font-size: 17px !important;
+    }
+
+
+    /* BAG */
+    #trendingContainer .bag-card .bag-icon {
+        transform: scale(0.65);
+    }
+
+}
 
 
 

@@ -9,15 +9,15 @@
 
 const trendingProducts = [
     {
-        name: "Trending Shoes ddd",
+        name: "Terrace Low-Tops",
         image: "Trendingc1.jpg"
     },
     {
-        name: "Trending Shoes 2",
+        name: "Classic Chelsea Boots",
         image: "Trendingc2.jpg"
     },
     {
-        name: "Trending Shoes 3",
+        name: "Crimson Stiletto Heels",
         image: "Trendingc3.jpg"
     }
 ];
@@ -25,34 +25,34 @@ const trendingProducts = [
 
 const menCasualProducts = [
     {
-        name: "Nike Air Max 95 Mystic Red",
+        name: "Travis Scott x Air Jordan 1",
         image: "mc1.jpg"
     },
     {
-        name: "Nike Air Force 1",
+        name: "Nike Air Huarache ",
         image: "mc2.jpg"
     },
     {
-        name: "Men's Casual Shoes",
+        name: "Air Jordan 1 High OG",
         image: "mc3.jpg"
     },
     {
-        name: "Men's Casual Shoes",
+        name: "Air Jordan 1 High OG Tiffany / Igloo",
         image: "mc4.jpg"
     },
     {
-        name: "Men's Casual Shoes",
+        name: "Travis Scott x Air Jordan 1 Retro",
         image: "mc5.jpg"
     },
     {
-        name: "Men's Casual Shoes",
+        name: "Union LA x Air Jordan 1",
         image: "mc6.jpg"
     },
       {
-        name: "Men's Casual Shoes",
+        name: "Air Jordan 1 Retro High OG",
         image: "mc7.jpg"
       },
-        {name: "Men's Casual Shoes",
+        {name: "Nike Dunk Low ",
         image: "mc8.jpg"
         
     },
@@ -62,35 +62,35 @@ const menCasualProducts = [
 
 const menFormalProducts = [
     {
-        name: "Men's Formal Shoes",
+        name: "Black Leather Chelsea Boots",
         image: "mf1.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Brown Leather Chelsea Boots",
         image: "mf2.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Lace-Up Ankle Boots",
         image: "mf3.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Wingtip Brogue Ankle Boots",
         image: "mf4.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Leather Cap-Toe Derby",
         image: "mf5.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Leather Moc-toe Derby Shoes",
         image: "mf6.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Beige Suede Penny Loafers",
         image: "mf7.jpg"
     },
     {
-        name: "Men's Formal Shoes",
+        name: "Pebble-Grain Tassel Loafers",
         image: "mf8.jpg"
     }
     
@@ -101,35 +101,35 @@ const menFormalProducts = [
 
 const menSportsProducts = [
     {
-        name: "Men's Sports Shoes",
+        name: "Asics Gel-NYC",
         image: "ms1.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: "New Balance 9060",
         image: "ms2.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: "Asics Gel-Kayano 14",
         image: "ms3.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: "White & Red Mesh Running Shoes",
         image: "ms4.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: "Lightweight Running Shoes",
         image: "ms5.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: "Cushioned Road Running Shoes",
         image: "ms6.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: " Cyan Blue TechRunning Shoes",
         image: "ms7.jpg"
     },
     {
-        name: "Men's Sports Shoes",
+        name: "Lightning-Pattern Running Shoes",
         image: "ms8.jpg"
     },
     
