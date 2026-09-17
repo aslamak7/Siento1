@@ -555,6 +555,7 @@ img {
 
 /* CARD ICONS */
 
+
 .card-icons {
     position: absolute;
 
@@ -577,7 +578,7 @@ img {
 
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.95);
+    background:#ffffff;
 
     display: flex;
     align-items: center;
@@ -585,17 +586,13 @@ img {
 
     cursor: pointer;
 
-    color: #111;
+    color: #000000;
 }
 
 .wish-card {
     font-size: 22px;
 }
 
-.wish-card.selected {
-    background: #111;
-    color: #fff;
-}
 
 .bag-card .bag-icon {
     transform: scale(0.8);
@@ -1366,7 +1363,7 @@ img {
     }
 
  .card-name {
-        font-size: 10px !important;
+        font-size: 8px !important;
     }
 
 
@@ -1454,11 +1451,12 @@ img {
     #trendingContainer .wish-card,
     #trendingContainer .bag-card {
 
-        width: 25px !important;
-        height: 25px !important;
+        width: 20px !important;
+        height: 20px !important;
 
-        min-width: 25px !important;
-        min-height: 25px !important;
+        min-width: 20px !important;
+        min-height: 20px !important;
+        
 
         padding: 0 !important;
 
@@ -1490,13 +1488,13 @@ img {
 
     /* BUY NOW BUTTON — ALL PRODUCT CARDS */
     .buy-btn {
-        width: 50px !important;
+        width: 40px !important;
         height: 20px !important;
 
         padding: 0 !important;
         margin: 0 !important;
 
-        font-size: 10px !important;
+        font-size: 6px !important;
         line-height: 23px !important;
 
         border-radius: 6px !important;
@@ -2510,3 +2508,42 @@ img {
         transform: translateY(-50%) !important;
     }
 }
+
+@media (max-width: 650px) {
+    .product-scroll {
+        touch-action: pan-y;
+    }
+}
+
+/* CLICKED HEART */
+.wish-card.selected {
+    color: #000;
+    
+}
+
+
+
+
+.wish-card.selected::after {
+    content: "❤️";
+    font-size: 15px;
+}
+
+.wish-card.selected {
+    font-size: 0;
+}
+
+.bag-card.selected {
+    background: #ffffff;
+}
+
+.bag-card.selected .bag-icon {
+    background: #000000;
+}
+
+
+
+
+
+
+

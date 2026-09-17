@@ -657,6 +657,7 @@ document.addEventListener(
             event.target.closest(
                 ".wish-card"
             )
+            
         ) {
 
             const button =
@@ -703,6 +704,11 @@ document.addEventListener(
                 ".bag-card"
             )
         ) {
+
+
+    const button = event.target.closest(".bag-card");
+
+    button.classList.toggle("selected");
 
             cartCount++;
 
@@ -1087,33 +1093,99 @@ function initializeProductSliders() {
             true
         );
 
+/* =============================================
+   TOUCH
+   Horizontal = product slider
+   Vertical = website scrolling
+============================================= */
 
-        /* =============================================
-           TOUCH
-           Native horizontal swipe is used.
-        ============================================= */
+let touchStartX = 0;
+let touchStartY = 0;
+let touchStartScrollLeft = 0;
+let touchDirection = null;
 
-        row.addEventListener(
-            "touchstart",
-            function () {
+row.addEventListener(
+    "touchstart",
+    function (event) {
 
-                row.style.scrollBehavior = "auto";
+        const touch = event.touches[0];
 
-            },
-            { passive: true }
-        );
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+        touchStartScrollLeft = row.scrollLeft;
+
+        touchDirection = null;
+
+        row.style.scrollBehavior = "auto";
+
+    },
+    { passive: true }
+);
 
 
-        row.addEventListener(
-            "touchend",
-            function () {
+row.addEventListener(
+    "touchmove",
+    function (event) {
 
-                row.style.scrollBehavior = "smooth";
+        const touch = event.touches[0];
 
-            },
-            { passive: true }
-        );
+        const distanceX =
+            touch.clientX - touchStartX;
 
+        const distanceY =
+            touch.clientY - touchStartY;
+
+
+        /* Decide whether this is horizontal or vertical */
+        if (!touchDirection) {
+
+            if (
+                Math.abs(distanceX) <
+                Math.abs(distanceY)
+            ) {
+
+                touchDirection = "vertical";
+
+            } else {
+
+                touchDirection = "horizontal";
+
+            }
+
+        }
+
+
+        /* Only control the product slider
+           during horizontal movement */
+
+        if (touchDirection === "horizontal") {
+
+            event.preventDefault();
+
+            row.scrollLeft =
+                touchStartScrollLeft - distanceX;
+
+        }
+
+        /* Vertical movement is NOT prevented.
+           Browser can scroll the page normally. */
+
+    },
+    { passive: false }
+);
+
+
+row.addEventListener(
+    "touchend",
+    function () {
+
+        row.style.scrollBehavior = "smooth";
+
+        touchDirection = null;
+
+    },
+    { passive: true }
+);
 
         /* =============================================
            INITIAL ARROW STATE
